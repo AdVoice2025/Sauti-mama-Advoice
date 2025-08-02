@@ -6,10 +6,10 @@
   <title>Sauti Mama</title>
   <style>
     :root {
-      --primary-color: #4B006E;
-      --accent-color: #FFEE8C;
-      --background-color: #FAF6FF;
-      --text-color: #1e1e1e;
+      --primary-color: #000000; /* black */
+      --accent-color: #ffffff;  /* white */
+      --background-color: #ffffff; /* white background */
+      --text-color: #000000; /* black text */
     }
 
     body {
@@ -23,7 +23,7 @@
 
     header {
       background-color: var(--primary-color);
-      color: white;
+      color: var(--accent-color);
       padding: 1.2rem;
       text-align: center;
     }
@@ -70,11 +70,12 @@
       background-color: var(--accent-color);
       padding: 0 0.3rem;
       font-weight: bold;
+      color: var(--primary-color);
     }
 
     footer {
       background-color: var(--primary-color);
-      color: white;
+      color: var(--accent-color);
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
@@ -87,16 +88,18 @@
     }
 
     .metric-box, .partner-card {
-      background: white;
-      border: 1px solid #ccc;
+      background: var(--accent-color);
+      border: 1px solid var(--primary-color);
       padding: 1rem;
       border-radius: 0.5rem;
       text-align: center;
+      color: var(--primary-color);
     }
 
     .map-container iframe {
       width: 100%;
       height: 300px;
+      border: 1px solid var(--primary-color);
     }
 
     @media (min-width: 600px) {
@@ -161,20 +164,20 @@
     <section id="about">
       <h2>About Us</h2>
       <p><strong>Sauti Mama</strong> is a <span class="highlight">maternal health information</span> platform that uses <span class="highlight">voice technology</span> (IVR and WhatsApp voice notes) to reach underserved mothers in rural Uganda.</p>
-      <p>With low smartphone and literacy rates in districts like <span class="highlight">Moroto</span> and <span class="highlight">Kitgum</span>, we are bridging the gap by delivering <strong>trusted, localized, and timely</strong> health content in native languages.</p>
+      <p>With low smartphone and literacy rates in districts like <span class="highlight">Mayuge</span> in <span class="highlight">Busoga</span>, we are bridging the gap by delivering <strong>trusted, localized, and timely</strong> health content in native languages.</p>
     </section> 
     
-<section id="inclusivity">
-  <h2>Inclusivity & Support</h2>
-  <p>
-    At <strong>Sauti Mama</strong>, we believe every mother deserves compassionate care and information, regardless of marital status.  
-    We are committed to supporting women who are pregnant outside of wedlock, ensuring they have access to trusted maternal health resources without stigma or exclusion.
-  </p>
-  <p>
-    We also recognize the crucial role of men and partners as supporters in the maternal health journey.  
-    Our platform encourages their active involvement, fostering a supportive environment for families and communities.
-  </p>
-</section>
+    <section id="inclusivity">
+      <h2>Inclusivity & Support</h2>
+      <p>
+        At <strong>Sauti Mama</strong>, we believe every mother deserves compassionate care and information, regardless of marital status.  
+        We are committed to supporting women who are pregnant outside of wedlock, ensuring they have access to trusted maternal health resources without stigma or exclusion.
+      </p>
+      <p>
+        We also recognize the crucial role of men and partners as supporters in the maternal health journey.  
+        Our platform encourages their active involvement, fostering a supportive environment for families and communities.
+      </p>
+    </section>
     
     <section id="solution">
       <h2>Our Solution</h2>
@@ -184,7 +187,7 @@
 
     <section id="pilot">
       <h2>Pilot Plan</h2>
-      <p>Our pilot will launch in <strong>Moroto</strong> and <strong>Kitgum</strong>, districts with some of the lowest maternal health indicators in Uganda.</p>
+      <p>Our pilot will launch in <strong>Mayuge</strong>, a district with some of the lowest maternal health indicators in Uganda.</p>
       <ul>
         <li>Partnering with local health workers and community leaders</li>
         <li>Distributing voice access codes for IVR health content</li>
@@ -218,10 +221,10 @@
 
     <section id="map">
       <h2>Our Target Areas</h2>
-      <p>We are focusing on maternal health support in Moroto and Kitgum districts, Uganda.</p>
+      <p>We are focusing on maternal health support in Mayuge district, Uganda.</p>
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.161216963463!2d33.785398!3d2.916109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1764a6e3f7482e17%3A0x57ccfddbb5baf028!2sNorthern%20Region%2C%20Uganda!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d396047.7957082982!2d33.718492529040946!3d0.45137710753766407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1770e8bdb1111111%3A0x2e0b42cd12a5a425!2sMayuge%2C%20Uganda!5e0!3m2!1sen!2sus!4v1689876543211!5m2!1sen!2sus"
           style="border:0;"
           allowfullscreen=""
           loading="lazy"
@@ -245,20 +248,20 @@
       </div>
     </section>
     <section id="donate">
-  <h2>Donate / Get Involved</h2>
-  <p>If you'd like to support Sauti Mama or learn how to donate, please fill out the form below and we will get back to you.</p>
-  <form action="mailto:hello.advoice@gmail.com" method="post" enctype="text/plain" style="max-width: 400px; margin: auto;">
-    <label for="name">Full Name:</label><br/>
-    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 12px;"/>
+      <h2>Donate / Get Involved</h2>
+      <p>If you'd like to support Sauti Mama or learn how to donate, please fill out the form below and we will get back to you.</p>
+      <form action="mailto:hello.advoice@gmail.com" method="post" enctype="text/plain" style="max-width: 400px; margin: auto;">
+        <label for="name">Full Name:</label><br/>
+        <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 12px;"/>
 
-    <label for="email">Email Address:</label><br/>
-    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 12px;"/>
+        <label for="email">Email Address:</label><br/>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 12px;"/>
 
-    <label for="message">Message:</label><br/>
-    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required style="width: 100%; padding: 8px; margin-bottom: 12px;"></textarea>
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required style="width: 100%; padding: 8px; margin-bottom: 12px;"></textarea>
 
-    <button type="submit" style="background-color: var(--primary-color); color: white; padding: 10px 20px; border: none; cursor: pointer;">Send</button>
-  </form>
+        <button type="submit" style="background-color: var(--primary-color); color: var(--accent-color); padding: 10px 20px; border: none; cursor: pointer;">Send</button>
+      </form>
     </section>
 
     <section id="contact">
@@ -273,4 +276,4 @@
     <p>© 2025 Sauti Mama. All rights reserved.<br/>Powered by AdVoice Uganda</p>
   </footer>
 </body>
-      </html>
+</html>
